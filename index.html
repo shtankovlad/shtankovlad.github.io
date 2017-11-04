@@ -4,10 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Template</title>
+    <title>Lesson 11</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.0/slick-1.8.0/slick/slick.css"/>
+    <link rel="stylesheet" href="slick-1.8.0/slick-1.8.0/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -16,42 +21,652 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+    </head>
   <body>
-  	<!-- =================начало================= -->
-    <h1 class="text-center">Привет, мир!</h1>
+	<header>
+    	<div class="main_head">
+    		<div class="container main_head_container">
+    			<div class="row">
+    				<div class="col-xs-6">
+    					<div class="main_head_border">
+    						<p>Smart</p>
+    					</div>
+    				</div>
+    				<div class="col-xs-6 main_nav_burger">
+    					<a class="main_head_burger" href="#">
+    						<span class="line"></span>
+    					</a>
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="col-xs-12 text-center main_header">
+    					<h1 class="wow lightSpeedIn"><span>Smart</span> Agency Landing Page</h1>
+    					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates doloremque rerum aspernatur dolorum at!</p>
+    				</div>
+                    <form action="#" class="col-md-4 col-sm-6 col-xs-12">
+                        <p class="form_header"><span>Send</span> A Message</p>
+                        <input type="text" class="form-control" placeholder="Your Name">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <textarea rows="3" class="form-control" placeholder="Your Message"></textarea>
+                        <button type="button">Send A Message <span>&#8594</span></button>         
+                    </form>
+                </div>
+    		</div>
+    	</div>
+    </header>
+    <div class="container">
+        <div id="process">
+            <div class="section_header text-center">
+                <h2><span>Working</span> Process</h2>
+                <p>Lorem ipsum dolor sit amet consectet ur adipiscing elit  Vestibulum bibend um vestibulum.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="process_box">
+                <div class="col-md-3 col-sm-6">
+                    <div class="box box1 wow zoomIn">
+                        <i class="fa fa-magnet"></i>
+                        <h4>Koc Koi Tomi</h4><p>Lorem ipsum is dummy lorem very dumy</p>
+                        <button data-toggle="modal" data-target="#wbox1_modal">+ Know More</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="box box2 wow zoomIn">
+                        <i class="fa fa-bug"></i>
+                        <h4>Koimona Set</h4>
+                        <p>Lorem ipsum is dummy lorem very dumy</p>
+                        <button data-toggle="modal" data-target="#wbox2_modal">+ Know More</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="box box3 wow zoomIn">
+                        <i class="fa fa-cogs"></i>
+                        <h4>Setting Koire</h4>
+                        <p>Lorem ipsum is dummy lorem very dumy</p>
+                        <button data-toggle="modal" data-target="#wbox3_modal">+ Know More</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="box box4 wow zoomIn">
+                        <i class="fa fa-camera-retro"></i>
+                        <h4>Ko Image Lara</h4>
+                        <p>Lorem ipsum is dummy lorem very dumy</p>
+                        <button data-toggle="modal" data-target="#wbox4_modal">+ Know More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="works">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="works text-center">
+                        <h2><span>Featured </span>Works</h2>
+                        <p>Lorem ipsum dolor sit amet consectet ur adipiscing elit  Vestibulum bibend um vestibulum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row_wbox_1">
+                <div class="col-sm-4">
+                    <div class="wbox">
+                        <img src="img/1.jpg" alt="work 1">
+                        <div class="hover_style">
+                            <div class="hov_st">
+                                <p>Work #1</p>
+                                <button data-toggle="modal" data-target=".gallery1">Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="wbox">
+                        <img src="img/2.jpg" alt="work 2">
+                        <div class="hover_style">
+                            <div class="hov_st">
+                                <p>Work #2</p>
+                                <button>Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="wbox">
+                        <img src="img/3.jpg" alt="work 3">
+                        <div class="hover_style">
+                            <div class="hov_st">
+                                <p>Work #3</p>
+                                <button>Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="row row_wbox_2">
+                <div class="col-sm-4">
+                    <div class="wbox">
+                        <img src="img/4.jpg" alt="work 4">
+                        <div class="hover_style">
+                            <div class="hov_st">
+                                <p>Work #4</p>
+                                <button>Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="wbox">
+                        <img src="img/5.jpg" alt="work 5">
+                        <div class="hover_style">
+                            <div class="hov_st">
+                                <p>Work #5</p>
+                                <button>Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="wbox">
+                        <img src="img/6.jpg" alt="work 6">
+                        <div class="hover_style">
+                            <div class="hov_st">
+                                <p>Work #6</p>
+                                <button>Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="row row_wbox_3">
+                <div class="col-sm-4">
+                    <div class="wbox">
+                        <img src="img/7.jpg" alt="work 7">
+                        <div class="hover_style">
+                            <div class="hov_st">
+                                <p>Work #7</p>
+                                <button>Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="wbox">
+                        <img src="img/8.jpg" alt="work 8">
+                        <div class="hover_style">
+                            <div class="hov_st">
+                                <p>Work #8</p>
+                                <button>Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="wbox">
+                        <img src="img/9.jpg" alt="work 9">
+                        <div class="hover_style">
+                            <div class="hov_st">
+                                <p>Work #9</p>
+                                <button>Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </div>
 
-	<section id="first">
-		<div class="container">
-			<div class="row">
-				<img class="col-lg-2 col-md-4 col-sm-6 img-responsive" src="img/icon.png" alt="иконка">
-				<img class="col-lg-2 col-md-4 col-sm-6 img-responsive" src="img/icon.png" alt="иконка">
-				<img class="col-lg-2 col-md-4 col-sm-6 img-responsive" src="img/icon.png" alt="иконка">
-				<img class="col-lg-2 col-md-4 col-sm-6 img-responsive" src="img/icon.png" alt="иконка">
-				<img class="col-lg-2 col-md-4 col-sm-6 img-responsive" src="img/icon.png" alt="иконка">
-				<img class="col-lg-2 col-md-4 col-sm-6 img-responsive" src="img/icon.png" alt="иконка">
-			</div>
-		</div>
-	</section>
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="services text-center">
+                        <h2><span>Services </span>We Provide</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, corrupti. Distinctio, ab necessitatibus!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row tab">
+                <div class="col-lg-2">
+                    <div class="tab_icons">
+                        <!-- Nav tabs -->
+                        <ul class="tab_list">
+                            <li class="active wow slideInLeft" data-wow-duration="1s">
+                                <a href="#app" data-toggle="tab"><img src="img/icon1.png" alt=""></a>
+                            </li>
+                            <li class="wow slideInLeft" data-wow-duration="2s">
+                                <a href="#web" data-toggle="tab"><img src="img/icon2.png" alt=""></a>
+                            </li>
+                            <li class="wow slideInLeft" data-wow-duration="3s">
+                                <a href="#site" data-toggle="tab"><img src="img/icon3.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="app" class="col-lg-10 col-xs-12 tab-pane fade in active">
+                        <div class="col-lg-8">
+                            <div class="tab_text">
+                                <h4>Modern App Design</h4>
+                                <span class="tab_line"></span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.</p>
+                                <br>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
+                                <button class="tab_button" data-toggle="modal" data-target="#tabs">+ Know More</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="tab_img">
+                                <img class="img-responsive" src="img/tab1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="web" class="col-lg-10 tab-pane fade">
+                        <div class="col-lg-8">
+                            <div class="tab_text">
+                                <h4>Modern Web Design</h4>
+                                <span class="tab_line"></span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.</p>
+                                <br>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
+                                <button class="tab_button">+ Know More</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="tab_img">
+                                <img class="img-responsive" src="img/tab1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="site" class="col-lg-10 tab-pane fade">
+                        <div class="col-lg-8">
+                            <div class="tab_text">
+                                <h4>Modern Site Design</h4>
+                                <span class="tab_line"></span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.</p>
+                                <br>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
+                                <button class="tab_button">+ Know More</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="tab_img">
+                                <img class="img-responsive" src="img/tab1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /div.tab-content -->
+            </div>
+        </div>
+    </section>
+    <section id="questions">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="questions text-center">
+                        <h2><span>Frequently </span>Asked Questions</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis optio necessitatibus quam, voluptatibus nobis. Officia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="accordion">
+                        <div class="panel-group" id="accordion">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                Пункт Группы Свертывания #1
+                              </a>
+                              </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                        Пункт Группы Свертывания #2
+                                      </a>
+                                    </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                        Пункт Группы Свертывания #3
+                                      </a>
+                                    </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="clients text-center">
+                        <h2><span>Clients </span>Said</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="reviews">
+                        <div class="reviews_slide">
+                            <div class="reviews_box">
+                                <img class="img-circle center-block" src="img/client1.jpg" alt="">
+                                <div class="reviews_box_shadow  text-center">
+                                    <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <p class="signature"><span>Kita Say,</span> <i>HK Director</i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews_slide">
+                            <div class="reviews_box">
+                                <img class="img-circle center-block" src="img/client1.jpg" alt="">
+                                <div class="reviews_box_shadow  text-center">
+                                    <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <p class="signature"><span>Kita Say,</span> <i>HK Director</i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews_slide">
+                            <div class="reviews_box">
+                                <img class="img-circle center-block" src="img/client1.jpg" alt="">
+                                <div class="reviews_box_shadow  text-center">
+                                    <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <p class="signature"><span>Kita Say,</span> <i>HK Director</i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews_slide">
+                            <div class="reviews_box">
+                                <img class="img-circle center-block" src="img/client1.jpg" alt="">
+                                <div class="reviews_box_shadow  text-center">
+                                    <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <p class="signature"><span>Kita Say,</span> <i>HK Director</i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews_slide">
+                            <div class="reviews_box">
+                                <img class="img-circle center-block" src="img/client1.jpg" alt="">
+                                <div class="reviews_box_shadow  text-center">
+                                    <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <p class="signature"><span>Kita Say,</span> <i>HK Director</i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews_slide">
+                            <div class="reviews_box">
+                                <img class="img-circle center-block" src="img/client1.jpg" alt="">
+                                <div class="reviews_box_shadow  text-center">
+                                    <p>"This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <p class="signature"><span>Kita Say,</span> <i>HK Director</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="footer text-center">
+                        <button class="wow wobble" data-wow-delay="5s" data-toggle="modal" data-target=".contact">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- modal koс koi tomi-->
+    <div class="modal fade" id="wbox1_modal" tabindex="-1" role="dialog" aria-labelledby="wbox1_modal_label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title koc" id="wbox1_modal_label">Koc Koi Tomi</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsa est totam porro ipsam maiores cupiditate itaque laborum impedit natus.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-primary">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal koс koi tomi-->
+    <!-- modal koimona-->
+    <div class="modal fade" id="wbox2_modal" tabindex="-1" role="dialog" aria-labelledby="wbox2_modal_label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title koimona" id="wbox2_modal_label">Koimona Set</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsa est totam porro ipsam maiores cupiditate itaque laborum impedit natus.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-primary">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal koimona-->
+    <!-- modal Setting Koire-->
+    <div class="modal fade" id="wbox3_modal" tabindex="-1" role="dialog" aria-labelledby="wbox3_modal_label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title koire" id="wbox3_modal_label">Setting Koire</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsa est totam porro ipsam maiores cupiditate itaque laborum impedit natus.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-primary">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal Setting Koire-->
+    <!-- modal Lara-->
+    <div class="modal fade" id="wbox4_modal" tabindex="-1" role="dialog" aria-labelledby="wbox4_modal_label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title lara" id="wbox4_modal_label">Ko Image Lara</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsa est totam porro ipsam maiores cupiditate itaque laborum impedit natus.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-primary">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal Lara-->
 
-	<section id="second">
-		<div class="container">
-			<div class="row second">
-				<div class="box col-lg-8">
-					<div class="row size">
-						<div class="square col-lg-3"></div>
-						<div class="square col-lg-3"></div>
-						<div class="square col-lg-3"></div>
-						<div class="square col-lg-3"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-<!-- ======================конец==================== -->
+    <!-- modal gallery -->
+    <div class="modal fade gallery1" tabindex="-1" role="dialog" aria-labelledby="gallery" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Работа 1</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque assumenda, iste praesentium ut tenetur debitis, rerum possimus culpa aut quam, quisquam maxime nisi a voluptates in quibusdam inventore architecto sed?</p>
+            <img class="img-responsive gal1" src="img/gal2.jpeg" alt="">
+            <img class="img-responsive gal1" src="img/gal3.jpg" alt="">
+            <img class="img-responsive gal1" src="img/gal1.jpg" alt="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-primary">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end mogal gallery -->
+
+        <!-- modal tab-->
+    <div class="modal fade" id="tabs" tabindex="-1" role="dialog" aria-labelledby="tabs_modal_label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title lara" id="tabs_modal_label">Our Services</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsa est totam porro ipsam maiores cupiditate itaque laborum impedit natus.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-primary">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal tab-->
+
+    <!-- modal footer -->
+    <div class="modal fade contact" tabindex="-1" role="dialog" aria-labelledby="contact_us" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title text-center" id="myModalLabel">Contact Us</h4>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+                <p class="form_header text-center"><span>Send</span> A Message</p>
+                <input type="text" class="form-control" placeholder="Your Name">
+                <input type="email" class="form-control" placeholder="Your Email">
+                <textarea rows="3" class="form-control" placeholder="Your Message"></textarea>         
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-primary">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal footer -->
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="slick-1.8.0/slick-1.8.0/slick/slick.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script>
+        $(document).ready(function(){
+          $('.reviews').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            dots: true,
+            arrows: true,
+            prevArrow: '<i class="fa fa-chevron-left arrows arrow_left"></i>',
+            nextArrow: '<i class="fa fa-chevron-right arrows arrow_right"></i>',
+            responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+          });
+        });
+    </script>
+
   </body>
 </html>
